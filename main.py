@@ -2,6 +2,7 @@ import cv2
 import tkinter as tk
 import tkinter.font as font
 import random
+# show outcome
 def neep():
     wind = tk.Tk()
     wind.title("Fortune")
@@ -12,6 +13,7 @@ def neep():
     g.config(font=("Arial", 50))
     g.pack()
     wind.mainloop()
+# scan face
 def scan():
     win.destroy()
     while True:
@@ -34,6 +36,7 @@ def scan():
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 cap = cv2.VideoCapture(0)
 
+# start button
 win = tk.Tk()
 win.title("Fortune")
 win.geometry("300x200")
